@@ -8,7 +8,9 @@ class App {
               families: ['Hind:700']
             },
             fontactive: () => {
-                //6:34
+                
+                window.addEventListener('resize', this.resize.bind(this), false);
+                //6:42
             }
           });
     }
