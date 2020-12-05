@@ -10,7 +10,10 @@ class App {
             fontactive: () => {
                 
                 window.addEventListener('resize', this.resize.bind(this), false);
-                //6:42
+                this.resize();
+
+                requestAnimationFrame(this.animate.bind(this));
+                //6:52
             }
           });
     }
